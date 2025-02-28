@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+
+    <!-- Fontawesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Glightbox CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.css"
+        integrity="sha512-iQ3H4A+iyBTP8M4ypX5PrTt2S+G1zmRjf0k0uOASKlFHysV8TL9ZoQyVwPss0D12IBTMoDEHA8+bg8a1viS9Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Main css style sheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <nav id="navBar" class="navbar navbar-expand-lg bg-danger sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="nintendoLogo" src="/Images/logo1.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ">
+                    <li class="nav-item me-xxl-2 me-xl-1">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item me-xxl-2 me-xl-1">
+                        <a class="nav-link" href="#game">Games</a>
+                    </li>
+                    <li class="nav-item me-xxl-2 me-xl-1">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item me-xxl-2 me-xl-1">
+                        <a class="nav-link" href="#event">Events</a>
+                    </li>
+                    <li class="nav-item me-xxl-2 me-xl-1">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item me-xxl-2 me-xl-1">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Login
+                        </a>
+                        <ul class="dropdown-menu text-center bg-danger border-light">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-pen me-1"></i>Register</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="fa-solid fa-right-to-bracket me-1"></i>Login</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-light">
+                            </li>
+                            <li><a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-right-from-bracket fa-flip-horizontal me-1"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Dark Mode -->
+                <div id="btnSwitch"
+                    class="form-check form-switch me-2 d-flex align-items-center justify-content-center">
+                    <input class="form-check-input me-1" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label text-light darkmode" for="flexSwitchCheckDefault">Dark</label>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-xxl-2 me-lg-1" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+
+    <!-- Scrollby start-->
+    <div data-bs-spy="scroll" data-bs-target="#navBar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+        class="scrollspy-example bg-body-tertiary rounded-2" tabindex="0">
+
+        <!-- Header start -->
+        <header id="home">
+            <div class="container-fluid">
+                <div class="hero row align-items-center">
+                    <!-- text and video start -->
+                    <div class="heroText col-12 col-lg-6 order-1">
+                        <h4 class="text-light text-center mt-3 mb-xl-2 mb-lg-3">Hello Kitty Island Adventure</h3>
+                            <p class="text-light mb-2 mb-xl-4 mt-xl-4">
+                                <span style="font-weight: bold;">&#x301DHello Kitty
+                                    Island
+                                    Adventure&#x301E</span>is a
+                                heartwarming, immersive adventuregame that takes you on a cozy journey through a vibrant
+                                and
+                                colorful island with the beloved Sanrio characters, including Hello Kitty, Kuromi, and
+                                Cinnamoroll.
+                            </p>
+
+                            <div class="buttonorder d-flex justify-content-center align-items-center mb-3">
+                                <a class="btn btn-danger rounded-pill me-3 text-light" id="order" href="">
+                                    Order Here
+                                </a>
+
+                                <a class="glightbox text-decoration-none text-light videoLink"
+                                    href=" https://youtu.be/k6y_T6BB3_M">
+
+                                    <i class="fa-regular fa-circle-play fs-2"></i>
+                                    <span>WATCH</span>
+                                </a>
+                            </div>
+                    </div>
+
+                    <!-- text and video end -->
+
+                    <!-- image start -->
+                    <div class="heroImage col-12 col-lg-6 px-0 h-100 order-lg-1">
+                        <img class="img img-fluid" src="/Images/banner1.jpg" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+        </header>
+        <!-- Header end -->
+
+
+        <!-- Games Section start-->
+        <section id="game">
+            <div class="container">
+                <div class="row">
+                    <!-- Tittle start -->
+                    <div class="col-12 text-center mt-3">
+                        <h3 class="text-danger">Games List</h3>
+                    </div>
+                    <!-- Tittle end -->
+                    <!-- Games List start -->
+                    <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 m-auto">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/Images/g1.png" class="card-img-top" alt="Pokemon Game">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pokémon™ Quest</h5>
+                                    <p class="card-text">
+                                        This is an action-adventure game where players explore an island....
+                                        <a href="#" class="arrow text-danger text-decoration-none mt-5">
+                                            <span>Readmore</span>
+                                            <i class="fa-solid fa-caret-right"></i>
+                                        </a>
+                                    </p>
+                                    <p class="fw-bold">Price: <span class="text-danger me-1">Free</span><del
+                                            class="text-danger">10$</del></p>
+                                    <a href="#" class="btn btn-danger">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/Images/g2.png" class="card-img-top" alt="Pokemon Game">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pokémon Sword & Pokémon Shield</h5>
+                                    <p class="card-text">
+                                        This game set in the Galar region RPGs set in the Galar region, where....
+                                        <a href="#" class="arrow text-danger text-decoration-none mt-5">
+                                            <span>Readmore</span>
+                                            <i class="fa-solid fa-caret-right"></i>
+                                        </a>
+                                    </p>
+
+                                    <p class="fw-bold">Price: <span class="text-danger me-1">110$</span><del
+                                            class="text-danger">119.99$</del></p>
+                                    <a href="#" class="btn btn-danger">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/Images/g3.png" class="card-img-top" alt="Pokemon Game">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pokémon Mystery Dungeon™</h5>
+                                    <p class="card-text">
+                                        This is a dungeon-crawling RPG where players transform into
+                                        Pokém....
+                                        <a href="#" class="arrow text-danger text-decoration-none mt-5">
+                                            <span>Readmore</span>
+                                            <i class="fa-solid fa-caret-right"></i>
+                                        </a>
+                                    </p>
+
+                                    <p class="fw-bold">Price: <span class="text-danger me-1">50$</span><del
+                                            class="text-danger">59.99$</del></p>
+                                    <a href="#" class="btn btn-danger">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/Images/g4.png" class="card-img-top" alt="Pokemon Game">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pokémon™ Legends: Arceus</h5>
+                                    <p class="card-text">
+                                        This is an action-RPG set in the ancient Sinnoh region, where play....
+                                        <a href="#" class="arrow text-danger text-decoration-none mt-5">
+                                            <span>Readmore</span>
+                                            <i class="fa-solid fa-caret-right"></i>
+                                        </a>
+                                    </p>
+
+                                    <p class="fw-bold">Price: <span class="text-danger me-1">50$</span><del
+                                            class="text-danger">59.99$</del></p>
+                                    <a href="#" class="btn btn-danger">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/Images/g5.png" class="card-img-top" alt="Pokemon Game">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pokémon Scarlet and Violet</h5>
+                                    <p class="card-text">
+                                        This is open-world RPGs set in the Paldea region, featuring new Pokém....
+                                        <a href="#" class="arrow text-danger text-decoration-none mt-5">
+                                            <span>Readmore</span>
+                                            <i class="fa-solid fa-caret-right"></i>
+                                        </a>
+                                    </p>
+
+                                    <p class="fw-bold">Price: <span class="text-danger me-1">50$</span><del
+                                            class="text-danger">59.99$</del></p>
+                                    <a href="#" class="btn btn-danger">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/Images/g6.png" class="card-img-top" alt="Zelda Game">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Legend of Zelda™</h5>
+                                    <p class="card-text">
+                                        This is an action-adventure series where players control Link to resc...
+                                        <a href="#" class="arrow text-danger text-decoration-none mt-5">
+                                            <span>Readmore</span>
+                                            <i class="fa-solid fa-caret-right"></i>
+                                        </a>
+                                    </p>
+
+                                    <p class="fw-bold">Price: <span class="text-danger me-1">59.99$</span></p>
+                                    <a href="#" class="btn btn-danger">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/Images/g7.png" class="card-img-top" alt="Another Game">
+                                <div class="card-body">
+                                    <h5 class="card-title">Another Code™: Recollection</h5>
+                                    <p class="card-text">
+                                        This is a mystery adventure game. Players control Ashley, uncovering se...
+                                        <a href="#" class="arrow text-danger text-decoration-none mt-5">
+                                            <span>Readmore</span>
+                                            <i class="fa-solid fa-caret-right"></i>
+                                        </a>
+                                    </p>
+
+                                    <p class="fw-bold">Price: <span class="text-danger me-1">59.99$</span></p>
+                                    <a href="#" class="btn btn-danger">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/Images/g8.png" class="card-img-top" alt="Princess Peach Game">
+                                <div class="card-body">
+                                    <h5 class="card-title">Princess Peach™: Showtime!</h5>
+                                    <p class="card-text">
+                                        This is a platformer where Princess Peach embarks on an adventure ....
+                                        <a href="#" class="arrow text-danger text-decoration-none mt-5">
+                                            <span>Readmore</span>
+                                            <i class="fa-solid fa-caret-right"></i>
+                                        </a>
+                                    </p>
+
+                                    <p class="fw-bold">Price: <span class="text-danger me-1">59.99$</span></p>
+                                    <a href="#" class="btn btn-danger">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="/Images/g9.png" class="card-img-top" alt="Luigui Game">
+                                <div class="card-body">
+                                    <h5 class="card-title">Luigi's Mansion™ 2</h5>
+                                    <p class="card-text">
+                                        This is a ghost-hunting adventure where Luigi explores haunted locations....
+                                        <a href="#" class="arrow text-danger text-decoration-none mt-5">
+                                            <span>Readmore</span>
+                                            <i class="fa-solid fa-caret-right"></i>
+                                        </a>
+                                    </p>
+
+                                    <p class="fw-bold">Price: <span class="text-danger me-1">59.99$</span></p>
+                                    <a href="#" class="btn btn-danger">Buy now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Games List end -->
+                </div>
+            </div>
+        </section>
+        <!-- Games Section end -->
+
+
+        <!-- About start -->
+        <section id="about" class="mt-4 mb-2 bg-danger">
+            <div class="container">
+                <div class="row pt-3">
+                    <!-- Title start -->
+                    <div class="col-12">
+                        <h3 class="text-center text-light pb-2">About</h3>
+                        <h5 class="text-center text-light pb-2">Nintendo's History</h5>
+                    </div>
+
+                    <!-- video and text start -->
+                    <div class="col-12 col-lg-6">
+                        <iframe class="border rounded mt-1 mb-2" width="100%" height="315"
+                            src="https://www.youtube.com/embed/itpcsQQvgAQ?si=mBAxRd1xZZXTcGGC"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p class="textabout px-1 text-light">
+                            Nintendo is a globally recognized Japanese video game company, founded in 1889 by Fusajiro
+                            Yamauchi. Initially a playing card company, it pivoted to electronics and video games in the
+                            1970s. Nintendo became a leader in the gaming industry, creating iconic franchises such as
+                            Super
+                            Mario, The Legend of Zelda, Pokémon, and Metroid.Known for its innovative consoles,
+                            including
+                            the Game Boy, Wii, Nintendo DS, and Nintendo
+                            Switch, the company has a reputation for creating both cutting-edge and family-friendly
+                            experiences. Nintendo is famous for its focus on gameplay, often prioritizing fun and
+                            accessibility over raw graphical power.
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <h5 class="text-center text-light pb-2">Nintendo's Mission</h5>
+                    </div>
+                    <div class="col-12 col-lg-6 pb-lg-3 order-lg-1">
+                        <img class="aboutImg img img-fluid img-thumbnail mt-1 mb-3" src="/Images/na.jpg"
+                            alt="Nintendo Image">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p class="textabout px-1 text-light">
+                            Nintendo's mission is to put smiles on the faces of people around the world through the
+                            power of
+                            gaming. The company strives to create unique, innovative, and fun experiences that are
+                            accessible to everyone, from casual players to hardcore fans. Nintendo is dedicated to
+                            pushing
+                            the boundaries of interactive entertainment while prioritizing creativity, quality, and the
+                            joy
+                            of play, making gaming a universal and enjoyable experience for all ages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About end -->
+
+
+        <!-- Events section start -->
+        <section id="event" class="my-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Tittle start -->
+                    <div class="col-12 text-center text-danger">
+                        <h3>Events</h3>
+                    </div>
+                    <!-- Event Carousel -->
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/Images/e1.png" class="eventImage d-block w-100" alt="event1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Nintendo World Championships: NES Edition</h5>
+                                    <p>Classic NES games, epic competition, retro gaming, ultimate champion showdown!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Images/e2.png" class="eventImage d-block w-100" alt="event2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Nintendo Switch 2</h5>
+                                    <p>Nintendo Switch 2 to be released in 2025</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Images/e3.png" class="eventImage d-block w-100" alt="event3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>8th Anniversary</h5>
+                                    <p>Celebrate with 8th Anniversary events in Fire Emblem Heroes!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Images/e4.png" class="eventImage d-block w-100" alt="event3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>And the latest Splatfest winner is…</h5>
+                                    <p>The results are in, squiddos! The clout is tallied and the numbers are crunched
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Events section end -->
+
+
+        <!-- Gallery start -->
+        <section id="gallery" class="mb-2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- Tittle -->
+                    <div class="col-12">
+                        <h3 class="text-center text-danger pb-1">Gallery</h3>
+                    </div>
+                    <!-- Gallery -->
+                    <div class="row text-center">
+                        <div class="col-12 mainImage">
+                            <img class="img img-fluid img-thumbnail" src="/Images/gallery1.jpeg" alt="gallery1">
+                        </div>
+                        <div class="col-12 mainImage">
+                            <img class="img img-fluid img-thumbnail" src="/Images/gallery2.png" alt="gallery2">
+                        </div>
+                        <div class="col-12 mainImage">
+                            <img class="img img-fluid img-thumbnail" src="/Images/gallery3.png" alt="gallery3">
+                        </div>
+                        <div class="col-12 mainImage">
+                            <img class="img img-fluid img-thumbnail" src="/Images/gallery4.png" alt="gallery4">
+                        </div>
+                        <div class="col-12 mainImage">
+                            <img class="img img-fluid img-thumbnail" src="/Images/gallery5.png" alt="gallery5">
+                        </div>
+                        <div class="col-12 mainImage">
+                            <img class="img img-fluid img-thumbnail" src="/Images/gallery6.png" alt="gallery6">
+                        </div>
+                        <div class="col-12 mainImage">
+                            <img class="img img-fluid img-thumbnail" src="/Images/gallery7.png" alt="gallery7">
+                        </div>
+                        <div class="col-12 mainImage">
+                            <img class="img img-fluid img-thumbnail" src="/Images/gallery8.png" alt="gallery8">
+                        </div>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <div class="imgArrow">
+                        <a class="prev" onclick="plusSlides(-1)">
+                            <i class="fs-4 leftArrow fa-solid fa-circle-chevron-left"></i>
+                        </a>
+                        <a class="next" onclick="plusSlides(1)">
+                            <i class="fs-4 rightArrow fa-solid fa-circle-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="smallImage">
+                            <img class="img img-fluid px-1" src="/Images/gallery1.jpeg" onclick="currentSlide(1)"
+                                alt="gallery1">
+                        </div>
+                        <div class="smallImage">
+                            <img class="img img-fluid px-1" src="/Images/gallery2.png" onclick="currentSlide(2)"
+                                alt="gallery2">
+                        </div>
+                        <div class="smallImage">
+                            <img class="img img-fluid px-1" src="/Images/gallery3.png" onclick="currentSlide(3)"
+                                alt="gallery3">
+                        </div>
+                        <div class="smallImage">
+                            <img class="img img-fluid px-1" src="/Images/gallery4.png" onclick="currentSlide(4)"
+                                alt="gallery4">
+                        </div>
+                        <div class="smallImage">
+                            <img class="img img-fluid px-1" src="/Images/gallery5.png" onclick="currentSlide(5)"
+                                alt="gallery5">
+                        </div>
+                        <div class="smallImage">
+                            <img class="img img-fluid px-1" src="/Images/gallery6.png" onclick="currentSlide(6)"
+                                alt="gallery6">
+                        </div>
+                        <div class="smallImage">
+                            <img class="img img-fluid px-1" src="/Images/gallery7.png" onclick="currentSlide(7)"
+                                alt="gallery7">
+                        </div>
+                        <div class="smallImage">
+                            <img class="img img-fluid px-1" src="/Images/gallery8.png" onclick="currentSlide(8)"
+                                alt="gallery8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery end -->
+
+
+        <!-- Contact start -->
+        <section id="contact" class="mt-4 mb-2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- Title start -->
+                    <div class="conTittle text-danger col-12">
+                        <h3 class="text-center pb-2">Contact Us</h3>
+                    </div>
+
+                    <!-- Contact details -->
+                    <div class="row justify-content-center">
+                        <div
+                            class="col-12 col-lg-5 col-md-9 m-2 rounded shadow-sm text-light bg-danger text-center contactDiv">
+                            <h5 class="conTittle mt-2"><i
+                                    class="fa-solid contactIcon fa-map-location-dot me-2"></i>Address</h5>
+                            <h6>31st Street, Myittha Township, Mandalay, Myanmar</h6>
+                        </div>
+                        <div
+                            class="col-12 col-lg-5 col-md-9 m-2 rounded shadow-sm text-light bg-danger text-center contactDiv">
+                            <h5 class="conTittle mt-2"><i class="fa-solid contactIcon fa-square-phone me-2"></i>Phone
+                            </h5>
+                            <h6>02-0344786</h6>
+                        </div>
+                        <div
+                            class="col-12 col-lg-5 col-md-9 m-2 rounded shadow-sm text-light bg-danger text-center contactDiv">
+                            <h5 class="conTittle mt-2"><i class="fa-solid contactIcon fa-envelope me-2"></i>Email</h5>
+                            <h6>admin@nnintendo.com</h6>
+                        </div>
+                        <div
+                            class="col-12 col-lg-5 col-md-9 m-2 rounded shadow-sm text-light bg-danger text-center contactDiv">
+                            <h5 class="conTittle mt-2"><i class="fa-solid contactIcon fa-clock me-2"></i>Opening Time
+                            </h5>
+                            <h6>Daily: 8AM - 9PM</h6>
+                        </div>
+                    </div>
+
+                    <!-- Contact form -->
+                    <div class="row justify-content-center align-items-center mt-2 mt-xl-4">
+                        <!-- Contact image -->
+                        <div class="col-12 col-md-5 text-center">
+                            <img class="img img-fluid w-100" src="/Images/contact.svg" alt="Contact Image">
+                        </div>
+
+                        <!-- Contact form -->
+                        <form class="col-12 col-md-7">
+                            <div class="my-2">
+                                <input class="form-control" placeholder="your name ...." type="text">
+                            </div>
+                            <div class="my-2">
+                                <input class="form-control" placeholder="your email ..." type="email">
+                            </div>
+                            <div class="my-2">
+                                <input class="form-control" placeholder="subject:" type="text">
+                            </div>
+                            <div class="my-2">
+                                <textarea class="form-control" placeholder="your message ..." name="" id="" cols="30"
+                                    rows="5"></textarea>
+                            </div>
+                            <div class="float-end my-2">
+                                <input class="btn btn-danger" type="button" value="Send Email">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact end -->
+
+
+    </div>
+    <!-- scrollby end -->
+
+
+    <!-- Footer start -->
+    <footer>
+        <div class="container-fluid bg-dark "">
+            <div class=" row text-light justify-content-center">
+            <div class="col-6 col-lg-2 pt-3 order-lg-1 text-center">
+                <h4><i class="fa-solid fa-map-location-dot"></i></h4>
+                <h5>Address</h5>
+                <h6>31st Street, Myittha Township, Mandalay, Myanmar</h6>
+            </div>
+            <div class="col-6 col-lg-2 pt-3 order-lg-2 text-center">
+                <h4><i class="fa-solid fa-square-phone"></i></h4>
+                <h5>Order</h5>
+                <h6>02-0344786</h6>
+            </div>
+            <div class="col-3 d-none d-lg-block pt-2 order-lg-3 text-center mt-3">
+                <img class="footerLogo img img-fluid" src="/Images/logo.png" alt="Footer Logo">
+            </div>
+            <div class="col-6 col-lg-2 pt-3 order-lg-4 text-center">
+                <h4><i class="fa-solid fa-clock"></i></h4>
+                <h5>Opening Time</h5>
+                <h6>Daily: 8AM - 9PM</h6>
+            </div>
+            <div class="col-6 col-lg-2 pt-3 order-lg-5 text-center">
+                <h4><i class="fa-solid fa-thumbs-up"></i></h4>
+                <h5>Follow Us</h5>
+                <h6 class="text-center">
+                    <i class="fa-brands fa-facebook me-2"></i>
+                    <i class="fa-brands fa-youtube me-2"></i>
+                    <i class="fa-brands fa-tiktok me-2"></i>
+                </h6>
+            </div>
+            <div class="col-12 d-lg-none pt-3 text-center">
+                <img class="footerLogo1 img img-fluid" src="/Images/logo.png" alt="Footer Logo">
+            </div>
+            <div class="col-12 my-3 order-last text-center">
+                <h6>&copy;Copyright <b class="text-danger">Nintendo</b> All Rights Reserved</h6>
+                <h6>Designed By <b class="text-danger">Yoon</b></h6>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Preloader start -->
+    <div id="preloader"></div>
+    <!-- Preloader end -->
+
+    <!-- Scroll Up start -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Scroll Up end-->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<!-- Glightbox JS link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"
+    integrity="sha512-RBWI5Qf647bcVhqbEnRoL4KuUT+Liz+oG5jtF+HP05Oa5088M9G0GxG0uoHR9cyq35VbjahcI+Hd1xwY8E1/Kg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Bootstrap JS link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<!-- JS Link -->
+<script src="main.js"></script>
+
+</html>

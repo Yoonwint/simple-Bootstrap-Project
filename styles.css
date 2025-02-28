@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+:root {
+    --blue: #6891F2;
+    --titleFont: "Oswald", serif;
+    --font: 'Times New Roman', Times, serif;
+}
+
+/* body start */
+body {
+    scroll-behavior: smooth;
+}
+
+/* body end */
+
+
+
+
+
+/* navbar start */
+.nintendoLogo {
+    width: 90px;
+}
+
+.navbar {
+    font-family: var(--font);
+    font-size: 23px;
+}
+
+.nav-item a {
+    color: #ffffff;
+    position: relative;
+}
+
+@media screen and (min-width: 992px) {
+
+    .nav-item a::before {
+        content: "";
+        background-color: white;
+        width: 0;
+        height: 1px;
+        left: 8px;
+        bottom: 10px;
+        position: absolute;
+    }
+
+    .nav-item a:hover::before {
+        width: 80%;
+        transition: 0.6s;
+
+    }
+
+
+}
+
+/* navbar end */
+
+
+
+
+/* header start */
+.hero {
+    background-color: var(--blue);
+
+}
+
+.herotext h3 {
+    font-family: var(--titleFont);
+}
+
+.heroText p {
+    text-align: center;
+    font-family: var(--font);
+}
+
+
+.videoLink i,
+.videoLink span {
+    transition: 0.8s;
+
+}
+
+.videoLink span {
+    font-family: var(--font);
+}
+
+.videoLink:hover i,
+.videoLink:hover span {
+    color: red;
+    transform: scale(1.2);
+}
+
+.buttonorder {
+    font-family: var(--font);
+}
+
+
+/* header end */
+
+
+
+
+
+/* game section start */
+#game {
+    font-family: var(--titleFont);
+}
+
+.card-body h5 {
+    font-family: var(--titleFont);
+}
+
+.card-body p {
+    font-family: var(--font);
+}
+
+.arrow i,
+.card img {
+    transition: 0.6s;
+}
+
+.arrow:hover i {
+
+    transform: scale(1.3);
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.card:hover img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translate(0, -15px);
+}
+
+/* game section end */
+
+
+/* About section start */
+#about h3,
+#about h5 {
+    font-family: var(--titleFont);
+}
+
+.aboutImg,
+.col-12 iframe {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+
+}
+
+.textabout {
+    text-align: justify;
+    font-family: var(--font);
+}
+
+/* About section end */
+
+
+
+/* event section start */
+#event {
+    font-family: var(--titleFont);
+}
+
+@media screen and (min-width: 0) {
+    .eventImage {
+        height: 230px;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .eventImage {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .eventImage {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .eventImage {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .eventImage {
+        height: 600px;
+    }
+
+}
+
+/* event section end */
+
+
+
+/* Gallery section start */
+#gallery {
+    font-family: var(--titleFont);
+}
+
+.imgArrow {
+    position: relative;
+    bottom: 145px;
+}
+
+.rightArrow,
+.leftArrow {
+    color: red;
+}
+
+.smallImage img {
+    display: none;
+}
+
+
+.rightArrow {
+    float: right;
+
+
+}
+
+.imgArrow {
+    position: relative;
+    bottom: 90px;
+}
+
+.mainImage img {
+    width: 300px;
+    height: 150px;
+
+}
+
+
+.leftArrow:hover,
+.rightArrow:hover {
+    color: #930505;
+    transition: 0.5s;
+
+}
+
+.leftArrow:hover {
+    transform: translate(-10px);
+}
+
+.rightArrow:hover {
+    transform: translate(10px);
+}
+
+
+@media screen and (min-width: 300px) {
+
+    .imgArrow {
+
+        bottom: 90px;
+    }
+
+    .mainImage img {
+        width: 300px;
+        height: 150px;
+
+    }
+
+    .smallImage img {
+        display: none;
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width: 400px) {
+    .imgArrow {
+        bottom: 140px;
+    }
+
+    .mainImage img {
+        width: 400px;
+        height: 260px;
+
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+
+    .imgArrow {
+
+        bottom: 150px;
+    }
+
+    .mainImage img {
+        width: 420px;
+        height: 280px;
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .imgArrow {
+        position: relative;
+        bottom: 180px;
+    }
+
+    .mainImage img {
+        width: 600px;
+        height: 350px;
+
+    }
+
+    .smallImage img {
+        display: block;
+        width: 200px;
+        height: 55px;
+    }
+
+
+    .rightArrow {
+        float: right;
+
+    }
+
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .imgArrow {
+        width: 1200px;
+        bottom: 230px;
+    }
+
+    .mainImage img {
+        width: 800px;
+        height: 470px;
+
+    }
+
+    .smallImage img {
+        display: block;
+        width: 300px;
+        height: 70px;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .imgArrow {
+
+        bottom: 290px;
+    }
+
+    .mainImage img {
+        width: 1000px;
+        height: 570px;
+
+    }
+
+    .smallImage img {
+        display: block;
+        width: 300px;
+        height: 90px;
+    }
+
+
+}
+
+/* Gallery section end */
+
+
+
+/* Contact section start */
+.conTittle {
+    font-family: var(--titleFont);
+}
+
+
+#contact {
+    font-family: var(--font);
+}
+
+.contactDiv {
+
+    height: 115px;
+}
+
+.contactDiv:hover .contactIcon {
+    color: black;
+}
+
+
+
+/* Contact section end */
+
+
+/* Footer start */
+footer {
+    font-family: var(--font);
+}
+
+.footerLogo1 {
+    width: 22%;
+}
+
+.footerLogo {
+    width: 36%;
+}
+
+
+@media screen and (min-width: 400px) {
+    .footerLogo1 {
+        width: 18%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footerLogo1 {
+        width: 16%;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .footerLogo1 {
+        width: 13%;
+    }
+}
+
+/* Footer end */
+
+
+/* Preloader start */
+#preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+    transition: 0.7s;
+}
+
+#preloader::before,
+#preloader::after {
+    content: "";
+    position: absolute;
+    border: 5px solid red;
+    border-radius: 50%;
+    animation: animate-loader 2s cubic-bezier(0, 0.22, 0.65, 1) infinite;
+
+}
+
+#preloader::after {
+    animation-delay: -0.6s;
+}
+
+
+@keyframes animate-loader {
+    0% {
+        width: 10px;
+        height: 10px;
+        top: calc(50% - 5px);
+        left: calc(50% - 5px);
+        opacity: 1;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+        opacity: 0;
+    }
+}
+
+
+
+/* Preloader end */
+
+
+/* Scrollup start */
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 20px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 7px 15px;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 20px;
+    /* Increase font size */
+    transition: 0.7s;
+    /* Duration to scale up the arrow */
+
+}
+
+#myBtn:hover {
+    background-color: black;
+    /* Add a dark-grey background on hover */
+    transform: scale(1.2);
+    /* Scale up the arrow */
+}
+
+/* Scrollup end */
+
+
+
+
+/* Dark mode start */
+.darkmode {
+    display: block;
+}
+
+@media screen and (min-width:992px) and (max-width: 1240px) {
+    .darkmode {
+        display: none;
+    }
+}
+
+/* Dark mode end */
